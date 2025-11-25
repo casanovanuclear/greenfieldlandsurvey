@@ -101,9 +101,9 @@
   <div class="container" role="document">
     <header>
       <div class="brand">
-        <div class="logo" aria-hidden>GLS</div>
+        <div class="logo" aria-hidden>GS</div>
         <div>
-          <div style="font-weight:800">Greenfield Land Surveying</div>
+          <div style="font-weight:800">Greenfield Surveying</div>
           <div style="font-size:13px;opacity:0.95">Certified Land Surveyors</div>
         </div>
       </div>
@@ -155,7 +155,7 @@
       <section id="contact" class="card contact" aria-labelledby="contact-title">
         <div>
           <h2 id="contact-title">Contact & office</h2>
-          <p class="meta"><strong>Greenfield Land Surveying Ltd.</strong><br>Tel: <a href="tel:+254712439100">+254 712 439 100</a><br>Email: <a href="thiongop41@gmail.com">thiongop41@gmail.com</a></p>
+          <p class="meta"><strong>Greenfield Land Surveying Ltd.</strong><br> Tel: <a href="tel:+254712439100">+254 712 439 100</a><br>Email: <a href="mailto:thiongop41@gmail.com">thiongop41@gmail.com</a></p>
 
           <h4 style="margin-top:14px">Opening hours</h4>
           <p class="meta">Mon — Fri: 8:00 — 17:00<br>Sat: 9:00 — 13:00</p>
@@ -165,7 +165,8 @@
         </div>
 
         <aside>
-          <form aria-label="Request a quote" onsubmit="alert('This is a demo form — replace action with a server endpoint.'); return false;">
+          <form aria-label="Request a quote" action="send_mail.php" method="POST">
+
             <label for="name">Your name</label>
             <input id="name" name="name" required placeholder="Full name">
 
@@ -186,7 +187,7 @@
     </main>
 
     <footer>
-      <div>© <span id="year"></span> Greenfield Land Surveying Ltd. — All rights reserved.</div>
+      <div>© <span id="year"></span> Greenfield Surveying Ltd. — All rights reserved.</div>
       <div>Registered Surveyors • Licensed & Insured</div>
     </footer>
   </div>
