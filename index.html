@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenfield Land Surveying</title>
+  <meta name="description" content="Professional land surveying services — cadastral, boundary identification, topographic surveys, mapping, and more.">
+  <style>
+    :root{
+      --green-700:#0f7a3a;
+      --green-600:#14904b;
+      --green-500:#19a85a;
+      --bg-gradient: linear-gradient(135deg, rgba(11,92,43,0.95) 0%, rgba(22,131,66,0.95) 100%);
+      --card-bg: rgba(255,255,255,0.95);
+      --glass: rgba(255,255,255,0.08);
+      --max-width:1100px;
+      --radius:12px;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg-gradient);
+      color:#063017;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      font-size:16px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+      border-radius:16px;
+      box-shadow:0 12px 30px rgba(3,30,12,0.35);
+      overflow:hidden;
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:24px 28px;
+      background:var(--green-700);
+      color:white;
+    }
+    .brand{
+      display:flex;gap:14px;align-items:center
+    }
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:var(--green-500);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px;box-shadow:0 6px 18px rgba(0,0,0,0.18)
+    }
+    nav a{color:rgba(255,255,255,0.92);text-decoration:none;margin-left:18px;font-weight:600}
+    main{display:grid;grid-template-columns:1fr;gap:28px;padding:28px}
+    .hero{
+      display:flex;flex-direction:column;gap:16px;padding:24px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      align-items:flex-start
+    }
+    .hero h1{margin:0;font-size:28px;color:#042b17}
+    .hero p{margin:0;opacity:0.95}
+    .cta{margin-top:6px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--green-600);color:white;font-weight:700;text-decoration:none}
+
+    .grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px
+    }
+    .card{background:var(--card-bg);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(8,40,20,0.08)}
+    .card h3{margin-top:0;margin-bottom:8px}
+    .services li{margin:8px 0;padding-left:6px}
+
+    .contact{
+      display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start
+    }
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(6,40,20,0.08);font-size:15px}
+    textarea{min-height:120px;resize:vertical}
+    .meta{font-size:14px;color:#0b4f27}
+
+    footer{padding:18px 28px;background:linear-gradient(0deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02));display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){
+      .brand .logo{width:46px;height:46px}
+      header{padding:16px}
+      main{padding:18px}
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:22px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>GLS</div>
+        <div>
+          <div style="font-weight:800">Greenfield Land Surveying</div>
+          <div style="font-size:13px;opacity:0.95">Certified Land Surveyors</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Accurate. Trustworthy. Local land surveying services.</h1>
+        <p>We provide professional cadastral, topographic and boundary surveys for private owners, developers and government agencies. Fast turnaround, clear reports and reliable maps.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Get a quote</a>
+        </div>
+      </section>
+
+      <section id="services" class="card" aria-labelledby="services-title">
+        <h2 id="services-title">Our core services</h2>
+        <ul class="services" style="margin:0;padding-left:16px">
+          <li><strong>Cadastral & title surveys</strong> — parcel boundaries, title verification and documentation.</li>
+          <li><strong>Boundary identification</strong> — stakes, pegging and boundary dispute assistance.</li>
+          <li><strong>Land subdivision</strong> — planning, parcel layout and road reserves.</li>
+          <li><strong>Topographic surveys</strong> — contours, spot heights and feature mapping for design.</li>
+          <li><strong>Area & volume determination</strong> — accurate measurement for valuations and transfers.</li>
+          <li><strong>GIS mapping & plotting</strong> — maps, georeferencing and digital deliverables.</li>
+          <li><strong>Sectional property surveys</strong> — units, strata and sectional plans.</li>
+          <li><strong>Title transfers & land search</strong> — assistance with searches and documentation.</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="grid">
+        <div class="card">
+          <h3>Recent project: Riverside Estates</h3>
+          <p class="meta">Cadastral survey & subdivision for a 12‑parcel development. Produced coordinates, plots and lodged plans.</p>
+        </div>
+        <div class="card">
+          <h3>Boundary restoration</h3>
+          <p class="meta">Boundary re-establishment for a residential property with old, missing pegs.</p>
+        </div>
+        <div class="card">
+          <h3>Topographic mapping</h3>
+          <p class="meta">Topographic survey for a municipal drainage upgrade — contours and cross-sections delivered.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="card contact" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">Contact & office</h2>
+          <p class="meta"><strong>Greenfield Land Surveying Ltd.</strong><br>Tel: <a href="tel:+254712439100">+254 712 439 100</a><br>Email: <a href="thiongop41@gmail.com">thiongop41@gmail.com</a></p>
+
+          <h4 style="margin-top:14px">Opening hours</h4>
+          <p class="meta">Mon — Fri: 8:00 — 17:00<br>Sat: 9:00 — 13:00</p>
+
+          <h4 style="margin-top:14px">Quick enquiries</h4>
+          <p class="meta">For urgent site visits call the mobile number. We aim to respond to emailed quotes within 24–48 hours.</p>
+        </div>
+
+        <aside>
+          <form aria-label="Request a quote" onsubmit="alert('This is a demo form — replace action with a server endpoint.'); return false;">
+            <label for="name">Your name</label>
+            <input id="name" name="name" required placeholder="Full name">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com">
+
+            <label for="service">Service of interest</label>
+            <input id="service" name="service" placeholder="e.g. cadastral survey">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Provide a short description of the site or request"></textarea>
+
+            <button class="btn" type="submit">Send request</button>
+          </form>
+          <p style="font-size:13px;margin-top:12px;color:rgba(6,40,20,0.7)"><strong>Note:</strong> Experienced land Surveyors</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Greenfield Land Surveying Ltd. — All rights reserved.</div>
+      <div>Registered Surveyors • Licensed & Insured</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
